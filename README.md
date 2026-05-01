@@ -1,2 +1,8 @@
-# practicas-estructura-de-datos
-Repositorio de las prácticas de la unidad de aprendizaje Estructura de Datos
+# estructura-de-datos-practicas
+# Prácticas de Estructura de Datos
+Estudiantes: Diego Jahaziel Lopez Estrada y Javier Alonso Carvajal Vasquez
+
+## Organización del Repositorio
+* **Primer Parcial**
+* **Segundo Parcial**
+* **Tercer Parcial** 
