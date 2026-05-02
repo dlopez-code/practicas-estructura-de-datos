@@ -1,0 +1,67 @@
+# Project: 2a10ADT
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = ADT.o Cola.o ColaArreglo.o Lista.o ListaLibreria.o main.o Pila.o PilaLibreria.o PilaPuntero.o PilaArreglo.o ListaArreglo.o ColaPuntero.o ColaLibreria.o ListaPuntero.o
+LINKOBJ  = ADT.o Cola.o ColaArreglo.o Lista.o ListaLibreria.o main.o Pila.o PilaLibreria.o PilaPuntero.o PilaArreglo.o ListaArreglo.o ColaPuntero.o ColaLibreria.o ListaPuntero.o
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = PilaArreglo.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\DevCpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+ADT.o: ADT.cpp
+	$(CPP) -c ADT.cpp -o ADT.o $(CXXFLAGS)
+
+Cola.o: Cola.cpp
+	$(CPP) -c Cola.cpp -o Cola.o $(CXXFLAGS)
+
+ColaArreglo.o: ColaArreglo.cpp
+	$(CPP) -c ColaArreglo.cpp -o ColaArreglo.o $(CXXFLAGS)
+
+Lista.o: Lista.cpp
+	$(CPP) -c Lista.cpp -o Lista.o $(CXXFLAGS)
+
+ListaLibreria.o: ListaLibreria.cpp
+	$(CPP) -c ListaLibreria.cpp -o ListaLibreria.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Pila.o: Pila.cpp
+	$(CPP) -c Pila.cpp -o Pila.o $(CXXFLAGS)
+
+PilaLibreria.o: PilaLibreria.cpp
+	$(CPP) -c PilaLibreria.cpp -o PilaLibreria.o $(CXXFLAGS)
+
+PilaPuntero.o: PilaPuntero.cpp
+	$(CPP) -c PilaPuntero.cpp -o PilaPuntero.o $(CXXFLAGS)
+
+PilaArreglo.o: PilaArreglo.cpp
+	$(CPP) -c PilaArreglo.cpp -o PilaArreglo.o $(CXXFLAGS)
+
+ListaArreglo.o: ListaArreglo.cpp
+	$(CPP) -c ListaArreglo.cpp -o ListaArreglo.o $(CXXFLAGS)
+
+ColaPuntero.o: ColaPuntero.cpp
+	$(CPP) -c ColaPuntero.cpp -o ColaPuntero.o $(CXXFLAGS)
+
+ColaLibreria.o: ColaLibreria.cpp
+	$(CPP) -c ColaLibreria.cpp -o ColaLibreria.o $(CXXFLAGS)
+
+ListaPuntero.o: ListaPuntero.cpp
+	$(CPP) -c ListaPuntero.cpp -o ListaPuntero.o $(CXXFLAGS)
