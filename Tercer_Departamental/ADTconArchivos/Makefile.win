@@ -1,0 +1,49 @@
+# Project: ADT3
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o ADT.o Cola.o Lista.o Pila.o PilaLibreria.o ColaLibreria.o ListaLibreria.o
+LINKOBJ  = main.o ADT.o Cola.o Lista.o Pila.o PilaLibreria.o ColaLibreria.o ListaLibreria.o
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = ADT3.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+ADT.o: ADT.cpp
+	$(CPP) -c ADT.cpp -o ADT.o $(CXXFLAGS)
+
+Cola.o: Cola.cpp
+	$(CPP) -c Cola.cpp -o Cola.o $(CXXFLAGS)
+
+Lista.o: Lista.cpp
+	$(CPP) -c Lista.cpp -o Lista.o $(CXXFLAGS)
+
+Pila.o: Pila.cpp
+	$(CPP) -c Pila.cpp -o Pila.o $(CXXFLAGS)
+
+PilaLibreria.o: PilaLibreria.cpp
+	$(CPP) -c PilaLibreria.cpp -o PilaLibreria.o $(CXXFLAGS)
+
+ColaLibreria.o: ColaLibreria.cpp
+	$(CPP) -c ColaLibreria.cpp -o ColaLibreria.o $(CXXFLAGS)
+
+ListaLibreria.o: ListaLibreria.cpp
+	$(CPP) -c ListaLibreria.cpp -o ListaLibreria.o $(CXXFLAGS)
