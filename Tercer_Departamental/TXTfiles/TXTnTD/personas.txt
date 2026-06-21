@@ -1,0 +1,18 @@
+Nombre: Luis
+Apellido paterno: Martinez
+Apellido materno: Prado
+Genero: Hombre
+Edad: 19
+------------------------
+Nombre: Alejandro
+Apellido paterno: Lopez
+Apellido materno: Vargas
+Genero: Hombre
+Edad: 18
+------------------------
+Nombre: Ximena
+Apellido paterno: Gutierrez
+Apellido materno: Ramirez
+Genero: Mujer
+Edad: 20
+------------------------

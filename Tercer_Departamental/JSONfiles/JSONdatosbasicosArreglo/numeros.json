@@ -1,0 +1,7 @@
+{
+  "numeros": [1, 2, 3, 4, 5],
+  "suma": 15,
+  "promedio": 3,
+  "maximo": 5,
+  "minimo": 1
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Numeros>
+    <Numero>1</Numero>
+    <Numero>2</Numero>
+    <Numero>3</Numero>
+    <Numero>4</Numero>
+    <Numero>5</Numero>
+    <Suma>15</Suma>
+    <Promedio>3</Promedio>
+    <Maximo>5</Maximo>
+    <Minimo>1</Minimo>
+</Numeros>

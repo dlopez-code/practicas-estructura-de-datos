@@ -1,0 +1,23 @@
+[
+  {
+    "nombre": "aaaaa",
+    "apellidoPaterno": "aa",
+    "apellidoMaterno": "aaa",
+    "genero": "h",
+    "edad": 20
+  },
+  {
+    "nombre": "eeee",
+    "apellidoPaterno": "ee",
+    "apellidoMaterno": "eee",
+    "genero": "h",
+    "edad": 20
+  },
+  {
+    "nombre": "iiiii",
+    "apellidoPaterno": "ii",
+    "apellidoMaterno": "iii",
+    "genero": "m",
+    "edad": 30
+  }
+]
