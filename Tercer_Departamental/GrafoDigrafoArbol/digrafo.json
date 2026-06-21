@@ -1,0 +1,51 @@
+{
+  "nodos": ["A","B","C","D"],
+  "aristas": ["a","b","c","d","e"],
+  "rutas": [
+    {
+      "conexionNodo2Nodo": {
+        "nodoInicial": "A",
+        "nodoFinal": "B",
+        "aristaConexion": "a",
+        "tiempo": 5,
+        "costo": 10
+      }
+    },
+    {
+      "conexionNodo2Nodo": {
+        "nodoInicial": "B",
+        "nodoFinal": "D",
+        "aristaConexion": "b",
+        "tiempo": 5,
+        "costo": 10
+      }
+    },
+    {
+      "conexionNodo2Nodo": {
+        "nodoInicial": "A",
+        "nodoFinal": "C",
+        "aristaConexion": "c",
+        "tiempo": 20,
+        "costo": 3
+      }
+    },
+    {
+      "conexionNodo2Nodo": {
+        "nodoInicial": "C",
+        "nodoFinal": "D",
+        "aristaConexion": "d",
+        "tiempo": 20,
+        "costo": 3
+      }
+    },
+    {
+      "conexionNodo2Nodo": {
+        "nodoInicial": "D",
+        "nodoFinal": "A",
+        "aristaConexion": "e",
+        "tiempo": 1,
+        "costo": 1
+      }
+    }
+  ]
+}

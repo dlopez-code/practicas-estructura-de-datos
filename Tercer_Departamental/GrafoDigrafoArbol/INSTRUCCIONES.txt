@@ -1,0 +1,22 @@
+PROYECTO: Grafo, Digrafo y Arbol con JSON y Dijkstra
+
+1. Abrir EstructurasJSON.dev en Dev-C++.
+2. Ejecutar el programa.
+3. Elegir si quieres usar Grafo, Digrafo o Arbol.
+4. Primero carga el archivo JSON correspondiente.
+5. Luego puedes mostrar, agregar datos, guardar y buscar mejor ruta.
+
+Archivos JSON:
+- grafo.json
+- digrafo.json
+- arbol.json
+
+En Grafo:
+- La conexion es ida y vuelta: A <--> B.
+
+En Digrafo:
+- La conexion tiene direccion: A ---> B.
+
+En Arbol:
+- La conexion va de padre a hijo: A ---> B.
+- El programa no deja que un hijo tenga dos padres.
